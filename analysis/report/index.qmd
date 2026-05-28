@@ -16,6 +16,8 @@ format:
     code-fold: false
     code-tools: false
 
+cluster: publishing
+cluster-order: 4
 ---
 
 <!-- ============================================================================
@@ -382,3 +384,15 @@ PRE-PUBLISH QA CHECKLIST
     when this post is rendered in situ on the blog site)
 
 ============================================================================ -->
+
+## Related posts in this cluster
+
+This post is part of the *Quarto, R Markdown, and Publishing* series.
+Recommended reading order:
+
+1. Post 80: [Multi-Language Quarto Documents on macOS](../80-multilanguagequartodemo/)
+2. Post 81: [Rapid Conversion of Draft R Scripts to Formal Rmd](../81-rapidconversionRtoRmd/)
+3. Post 82: [Controlling Table Placement in R Markdown](../82-tableplacementrmarkdown/)
+4. **Post 83: Building a Statistical Computing Textbook** (this post)
+5. Post 84: [Setting up OBS for Live R Coding Screencasts](../84-setupobs/)
+
