@@ -6,7 +6,7 @@ categories: [quarto, teaching, reproducibility]
 description: "I did not really appreciate how much structural decision-making goes into a textbook until I tried to draft two at once, both under the 'in the Age of AI' framing."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: false
+draft: true
 execute:
   echo: true
   warning: false
@@ -215,7 +215,7 @@ The tools that came up most often:
 
 The bulk batch-edit pattern (rename a heading across 45 chapters, insert a section block after a given anchor) was handled by short ad-hoc Python scripts using `pathlib` and a content-map dictionary. Shell `sed` worked for single-line substitutions but became unmanageable for multi-line insertions.
 
-![A workflow scene showing a simple diagram of the two books' structure: seven parts in the methods volume, seven parts in the practicum, each containing the same chapter template.](media/images/ambiance3.jpg){.img-fluid}
+![A workflow scene showing a simple diagram of the two books' structure: seven parts in the methods volume, seven parts in the practicum, each containing the same chapter template.](media/images/ambiance3.png){.img-fluid}
 
 # Things to Watch Out For
 
@@ -373,7 +373,7 @@ Feedback is welcome in the following cases:
 PRE-PUBLISH QA CHECKLIST
 
 [x] YAML filled in (title, subtitle, date, categories, description, image)
-[x] document-type: 'blog', draft: false
+[x] document-type: 'blog', draft: true
 [x] Narrative complete (no remaining `[bracketed]` placeholders)
 [x] Four placeholder images present under media/images/ (hero + 3 ambiance)
 [ ] media/images/README.md attributes each image (placeholders at time of
