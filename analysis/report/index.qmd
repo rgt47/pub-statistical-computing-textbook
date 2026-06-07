@@ -6,7 +6,7 @@ categories: [quarto, teaching, reproducibility]
 description: "I did not really appreciate how much structural decision-making goes into a textbook until I tried to draft two at once, both under the 'in the Age of AI' framing."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
@@ -373,7 +373,7 @@ Feedback is welcome in the following cases:
 PRE-PUBLISH QA CHECKLIST
 
 [x] YAML filled in (title, subtitle, date, categories, description, image)
-[x] document-type: 'blog', draft: true
+[x] document-type: 'blog', draft: false
 [x] Narrative complete (no remaining `[bracketed]` placeholders)
 [x] Four placeholder images present under media/images/ (hero + 3 ambiance)
 [ ] media/images/README.md attributes each image (placeholders at time of
