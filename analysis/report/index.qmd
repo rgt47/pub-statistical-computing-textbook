@@ -1,6 +1,6 @@
 ---
 title: "Building a statistical computing textbook in the Age of AI"
-author: "Ronald 'Ryy' G. Thomas"
+author: "Ronald G. Thomas"
 date: "2026-04-24"
 categories: [quarto, teaching, reproducibility]
 description: "I did not really appreciate how much structural decision-making goes into a textbook until I tried to draft two at once, both under the 'in the Age of AI' framing."
