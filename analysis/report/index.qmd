@@ -11,7 +11,6 @@ execute:
   echo: true
   warning: false
   message: false
-
 cluster: publishing
 cluster-order: 3
 ---
@@ -59,7 +58,7 @@ Construct described in [post 52](/posts/52-workflow-construct/). Authoring a tex
 The process is documented as it unfolded. Corrections and better
 approaches are welcome; see the contact section at the end.
 
-![Workspace ambiance image: a desk with two browser tabs open side-by-side, each rendering a different Quarto book under the same file-system hierarchy.](media/images/ambiance1.png){.img-fluid}
+![Workspace ambiance image: a desk with two browser tabs open side-by-side, each rendering a different Quarto book under the same file-system hierarchy.](media/images/ambiance1.png){.img-fluid height=3.5in}
 
 # What is a Quarto book?
 
@@ -135,7 +134,7 @@ require the statistician's judgment:
 
 Each decision gets a paragraph of explanation, with the failure modes named explicitly (extrema, time-series data, skewed bootstrap distributions) and the chapter that follows providing the vocabulary to make each decision.
 
-![Terminal showing the book's sidebar in the browser, with the two books' shared chapter structure visible as identical tree layouts under different part-labels.](media/images/ambiance2.png){.img-fluid}
+![Terminal showing the book's sidebar in the browser, with the two books' shared chapter structure visible as identical tree layouts under different part-labels.](media/images/ambiance2.png){.img-fluid height=3.5in}
 
 # The four structural decisions
 
@@ -211,7 +210,7 @@ The tools that came up most often:
 
 The bulk batch-edit pattern (rename a heading across 45 chapters, insert a section block after a given anchor) was handled by short ad-hoc Python scripts using `pathlib` and a content-map dictionary. Shell `sed` worked for single-line substitutions but became unmanageable for multi-line insertions.
 
-![A workflow scene showing a simple diagram of the two books' structure: seven parts in the methods volume, seven parts in the practicum, each containing the same chapter template.](media/images/ambiance3.png){.img-fluid}
+![A workflow scene showing a simple diagram of the two books' structure: seven parts in the methods volume, seven parts in the practicum, each containing the same chapter template.](media/images/ambiance3.png){.img-fluid height=3.5in}
 
 # Things to Watch Out For
 
