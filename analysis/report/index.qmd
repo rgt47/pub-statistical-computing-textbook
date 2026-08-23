@@ -38,7 +38,7 @@ back-tracking documented here.
 
 More formally, we document here the convergence of the Knowledge
 Management and LLM-Augmented Editing concerns of the Workflow
-Construct described in [post 52](/posts/52-workflow-construct/). Authoring a textbook is the largest-scale knowledge-management task most academics will undertake; doing so 'in the age of AI' surfaces specifically how the LLM-augmented editing layer interacts with the file-system, document, and bibliographic layers below it. The retrospective documented here is one working session worth of evidence on how those layers compose under sustained use.
+Construct described in [A Workflow Construct for the Modern Data Scientist](../wf-construct-overview-anchor/). Authoring a textbook is the largest-scale knowledge-management task most academics will undertake; doing so 'in the age of AI' surfaces specifically how the LLM-augmented editing layer interacts with the file-system, document, and bibliographic layers below it. The retrospective documented here is one working session worth of evidence on how those layers compose under sustained use.
 
 ## Motivations
 
@@ -294,8 +294,8 @@ R scripts should be read separately, as they do not fully overlap.
 
 **Related posts:**
 
-- [Setup Post Template (AWS CLI)](/posts/47-templatesetup/templatesetup/): the post template this one follows.
-- [Template Post for Data Analysis](/posts/39-templatepost/templatepost/): the data-analysis sibling template.
+- [Provisioning AWS EC2 Instances](../cln-aws-ec2-provisioning/): the post template this one follows.
+- [Blog Post Template](../zc-blog-post-template/): the data-analysis sibling template.
 
 **Key resources:**
 
