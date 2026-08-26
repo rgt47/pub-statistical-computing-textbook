@@ -2,6 +2,29 @@
 
 This directory contains static images used in the blog post. Always document the source and license of each image.
 
+## Status (2026-08-25)
+
+`hero.jpg`, `ambiance1.jpg`, and `ambiance2.jpg` are genuine Gemini
+generations as of 2026-08-25 (generated via the `gemini-image-generator`
+tool), replacing the R logo (wrong software-logo asset) and two
+unrelated Reddit screenshots. `ambiance3.jpg` (the UCSD Geisel Library
+photo) was already genuine, but its caption in the `.qmd` did not
+describe it; the caption was corrected to match. `penguin-hero.jpg` is
+unreferenced leftover template debris, not used by this post.
+
+- `hero.jpg`: two identical open notebooks side by side, each with a
+  different outline sketched on its page, a shared pen between them.
+  Metaphor: drafting two structurally distinct textbooks at once.
+- `ambiance1.jpg`: a stack of index cards fanned out, each a different
+  section heading in sequence. Metaphor: structural decisions about
+  chapter ordering.
+- `ambiance2.jpg`: a single hardcover book propped half-open, pages
+  fanned to show a printed page and a blank facing page. Metaphor: a
+  textbook still being written.
+
+All three processed via `magick -resize 1600x -strip -quality 85` to
+1600x873.
+
 ## penguin-hero.jpg
 
 - **Source**: Centralized image storage at `/images/posts/penguin-hero.jpg`
