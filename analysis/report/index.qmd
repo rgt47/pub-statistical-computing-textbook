@@ -21,7 +21,7 @@ HERO IMAGE
 
 ![Two identical open notebooks side by side, each with a different outline sketched on its page, a single shared pen resting between them: drafting two structurally distinct textbooks at once.](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
 
-*A textbook's subtitle is a commitment. 'In the Age of AI' commits the author to explaining where the human-LLM division of labour actually falls for each topic.*
+*A textbook's subtitle is a commitment. 'In the Age of AI' commits the author to explaining where the human-LLM division of labor actually falls for each topic.*
 
 # Introduction
 
@@ -45,14 +45,14 @@ Construct described in [A Workflow Construct for the Modern Data Scientist](../w
 - Existing statistical computing textbooks are excellent but largely predate widespread LLM use. A curriculum written as if 2019 were still the current year trains students for a workplace that no longer exists.
 - Graduate biostatistics students arrive with LLMs already in hand. Pretending otherwise produces a textbook that does not match their reading context.
 - I wanted a dual-volume approach: a methods book (numerical algorithms, models, bootstrap, Bayesian) and a practicum (reproducibility, Git, Docker, SAS, CDISC). The two should share scaffolding but remain independently readable.
-- A peer-program survey (22 US biostat MS programmes) had surfaced specific content gaps (missing data, SAS, survival, Bayesian computation) that I wanted to close without restructuring the books.
+- A peer-program survey (22 US biostat MS programs) had surfaced specific content gaps (missing data, SAS, survival, Bayesian computation) that I wanted to close without restructuring the books.
 - I wanted to document the decision-making as it happened so that the next instructor building out a similar text has a worked example to follow.
 
 ## Objectives
 
 1. Scaffold two Quarto books (a methods volume and a practicum companion) with compatible chapter structure, shared citation conventions, and visually distinct rendering.
 2. Establish a 'statistician's contribution' / 'collaborating with an LLM' pattern that earns the 'in the Age of AI' subtitle.
-3. Ground chapter outlines in existing lecture materials, a comprehensive peer-MS-programme survey, and Jenny Bryan's STAT 545 philosophical framing.
+3. Ground chapter outlines in existing lecture materials, a comprehensive peer-MS-program survey, and Jenny Bryan's STAT 545 philosophical framing.
 4. Apply front-matter and code-block improvements (code annotations, first-class callouts, typographic differentiation) as a named 'polish' pass.
 
 The process is documented as it unfolded. Corrections and better
@@ -142,7 +142,7 @@ The session's work sorted into four structural decisions, each with downstream c
 
 ## Decision 1: book boundary and overlap
 
-The methods volume covers statistical-theory content an MS programme teaches in a typical one-quarter course: programming in R, numerical linear algebra, optimisation, simulation, bootstrap, linear models, GLM, mixed models, survival, Bayesian. The practicum covers the workflow that surrounds the methods: reproducibility infrastructure, Git, Docker, rrtools, renv, Quarto, tidyverse wrangling, CDISC data standards, SAS, and two full case studies.
+The methods volume covers statistical-theory content an MS program teaches in a typical one-quarter course: programming in R, numerical linear algebra, optimization, simulation, bootstrap, linear models, GLM, mixed models, survival, Bayesian. The practicum covers the workflow that surrounds the methods: reproducibility infrastructure, Git, Docker, rrtools, renv, Quarto, tidyverse wrangling, CDISC data standards, SAS, and two full case studies.
 
 The boundary is enforced by discipline in the table of contents. Where a chapter in one volume touches a topic covered in the other, the prose uses a textual pointer ('see the Missing Data chapter of the companion *Biostatistics Practicum* volume') rather than a Quarto cross-reference, because `@sec-*` anchors do not resolve across distinct books.
 
@@ -150,7 +150,7 @@ The boundary is enforced by discipline in the table of contents. Where a chapter
 
 The original chapter template ended with a single 'With AI assistance' callout containing three prompts. Reviewing the material as a whole showed that three decorative prompts do not earn the 'in the Age of AI' subtitle; they behave as a sidebar rather than as part of the intellectual framework.
 
-The replacement is two structured sections per chapter: a front-loaded 'The statistician's contribution' (what the LLM cannot do on the reader's behalf) and an end-of-chapter 'Collaborating with an LLM on X' (what to verify when the LLM produces output). The preface and introduction were rewritten to name the four-category framework (reliable, unreliable, cannot-due-to-missing-context, cannot-due-to-accountability) that organises the book's position.
+The replacement is two structured sections per chapter: a front-loaded 'The statistician's contribution' (what the LLM cannot do on the reader's behalf) and an end-of-chapter 'Collaborating with an LLM on X' (what to verify when the LLM produces output). The preface and introduction were rewritten to name the four-category framework (reliable, unreliable, cannot-due-to-missing-context, cannot-due-to-accountability) that organizes the book's position.
 
 ## Decision 3: sourcing chapter content
 
@@ -160,7 +160,7 @@ The revised workflow reads all three sources, integrates inline code from the sl
 
 ## Decision 4: visual differentiation
 
-Opening the two books in adjacent browser tabs, they were indistinguishable at a glance. Both used the same primary colour, the same body face, the same monospace face, the same SCSS rules. The fix was a deliberate typographic split: the methods volume renders body text in Source Serif 4 (fallbacks Charter, Georgia), the practicum renders body text in Source Sans 3 (fallbacks Inter, Helvetica Neue). Monospace stays JetBrains Mono in both. The SCSS change was ten lines per book.
+Opening the two books in adjacent browser tabs, they were indistinguishable at a glance. Both used the same primary color, the same body face, the same monospace face, the same SCSS rules. The fix was a deliberate typographic split: the methods volume renders body text in Source Serif 4 (fallbacks Charter, Georgia), the practicum renders body text in Source Sans 3 (fallbacks Inter, Helvetica Neue). Monospace stays JetBrains Mono in both. The SCSS change was ten lines per book.
 
 Complementary configuration changes in `_quarto.yml`:
 
@@ -178,7 +178,7 @@ format:
     highlight-style: arrow
 ```
 
-Each of these settings is a named Quarto feature. `code-annotations: hover` enables numbered-disc annotations inline in code. `code-tools` puts a 'view source' chevron on each page that links to the source `.qmd` in the book's GitHub repository. `code-block-border-left` replaces a hand-rolled SCSS rule with Quarto-native styling synchronised with dark-mode theming. `highlight-style: arrow` is the accessibility-tuned palette and renders legibly in both HTML and PDF.
+Each of these settings is a named Quarto feature. `code-annotations: hover` enables numbered-disc annotations inline in code. `code-tools` puts a 'view source' chevron on each page that links to the source `.qmd` in the book's GitHub repository. `code-block-border-left` replaces a hand-rolled SCSS rule with Quarto-native styling synchronized with dark-mode theming. `highlight-style: arrow` is the accessibility-tuned palette and renders legibly in both HTML and PDF.
 
 # Verification
 
@@ -234,13 +234,13 @@ Nothing installed that needed rollback. All work is in Git; `git reset --hard <c
 
 # What Did We Learn?
 
-## Lessons Learnt
+## Lessons Learned
 
 **Conceptual Understanding:**
 
-- A subtitle is a structural commitment, not a tagline. 'In the Age of AI' obliged the book to explain where the human-LLM division of labour falls for each topic. Three prose prompts at the end of a chapter did not discharge the commitment.
+- A subtitle is a structural commitment, not a tagline. 'In the Age of AI' obliged the book to explain where the human-LLM division of labor falls for each topic. Three prose prompts at the end of a chapter did not discharge the commitment.
 - Two books are easier to draft than one, because the scope limits become explicit. Each volume has a boundary, and content that straddles the boundary gets a textual pointer rather than a cross-book link.
-- Peer programs converge on a fairly consistent MS curriculum. A 22-programme survey found 17/22 require SAS, 14/22 require missing data, 13/22 require Bayesian computation. Content gaps close faster when the reference distribution is visible.
+- Peer programs converge on a fairly consistent MS curriculum. A 22-program survey found 17/22 require SAS, 14/22 require missing data, 13/22 require Bayesian computation. Content gaps close faster when the reference distribution is visible.
 - The Posit book family (r4ds, r-pkgs, Advanced R, ggplot2) is an excellent structural template, but its conventions do not by themselves earn an 'Age of AI' subtitle. That work is additive.
 
 **Technical Skills:**
@@ -277,9 +277,9 @@ Nothing installed that needed rollback. All work is in Git; `git reset --hard <c
 
 # Wrapping Up
 
-A textbook's subtitle is a commitment. 'Statistical Computing in the Age of AI' obliged the book to explain where the human-LLM division of labour falls for each topic, and the explanation had to be structural rather than decorative. The current template delivers that through two sections per chapter (statistician's contribution plus collaborating with an LLM) backed by a four-category framework in the introduction.
+A textbook's subtitle is a commitment. 'Statistical Computing in the Age of AI' obliged the book to explain where the human-LLM division of labor falls for each topic, and the explanation had to be structural rather than decorative. The current template delivers that through two sections per chapter (statistician's contribution plus collaborating with an LLM) backed by a four-category framework in the introduction.
 
-The secondary lesson was that a dual-volume approach clarifies scope. One book tries to be everything to everyone; two books can afford to be boundary-conscious, each pointing to the other where their topics connect. The methods volume covers what modelling looks like; the practicum covers everything that surrounds modelling. A student who reads both comes out with a complete picture and has an easier time than the single-volume reader because each book's scope is visibly narrower.
+The secondary lesson was that a dual-volume approach clarifies scope. One book tries to be everything to everyone; two books can afford to be boundary-conscious, each pointing to the other where their topics connect. The methods volume covers what modeling looks like; the practicum covers everything that surrounds modeling. A student who reads both comes out with a complete picture and has an easier time than the single-volume reader because each book's scope is visibly narrower.
 
 In conclusion, four points merit emphasis. First, a subtitle is a
 structural obligation: it must be earned with sections, not sidebars.
@@ -302,7 +302,7 @@ R scripts should be read separately, as they do not fully overlap.
 - [Quarto Books documentation](https://quarto.org/docs/books/)
 - [Advanced R by Hadley Wickham](https://adv-r.hadley.nz/): the chapter-structure reference.
 - [R for Data Science, 2nd ed.](https://r4ds.hadley.nz/): tidyverse applied reference.
-- [STAT 545 by Jenny Bryan and Derek Stephens](https://stat545.com/): 'everything in data analysis except modelling' framing.
+- [STAT 545 by Jenny Bryan and Derek Stephens](https://stat545.com/): 'everything in data analysis except modeling' framing.
 - [zzcollab framework](https://github.com/rgt47/zzcollab): the five-pillar research compendium scaffold used as this post's working directory.
 
 ---
@@ -357,8 +357,8 @@ Feedback is welcome in the following cases:
 
 - Drafting a similar domain-specific textbook and wishing to compare
   structural decisions.
-- A better approach to the human-LLM division of labour framework.
-- Teaching a biostatistics MS programme with different curriculum gaps
+- A better approach to the human-LLM division of labor framework.
+- Teaching a biostatistics MS program with different curriculum gaps
   than the ones this process surfaced.
 - A general connection is of interest.
 
