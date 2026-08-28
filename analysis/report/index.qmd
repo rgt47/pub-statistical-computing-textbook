@@ -388,7 +388,7 @@ Recommended reading order:
 1. [Multi-Language Quarto Documents on macOS](../pub-multi-language-quarto/)
 2. [Rapid Conversion of Draft R Scripts to Formal Rmd](../pub-r-script-to-rmd/)
 3. **Building a Statistical Computing Textbook** (this post)
-4. [Setting up OBS for Live R Coding Screencasts](../pub-obs-r-screencasts/)
+4. [Producing R Coding Videos: OBS Screencasts and Narrated Slide Decks](../pub-obs-r-screencasts/)
 5. [Hosting a Quarto Book Series on Netlify](../pub-hosting-quarto-books-netlify/)
 6. [A Review and Proposal for Policy Regarding Generative AI Use in Graduate Biostatistics Courses](../pub-ai-course-policy-survey/)
 
