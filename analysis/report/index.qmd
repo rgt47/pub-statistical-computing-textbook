@@ -3,7 +3,7 @@ title: "Building a statistical computing textbook in the Age of AI"
 author: "Ronald G. Thomas"
 date: "2026-04-24"
 categories: [quarto, teaching, reproducibility]
-description: "I did not really appreciate how much structural decision-making goes into a textbook until I tried to draft two at once, both under the 'in the Age of AI' framing."
+description: "A textbook demands more structural decision-making than it appears to, and drafting two at once makes every one of those decisions explicit, both under the 'in the Age of AI' framing."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: false
@@ -25,7 +25,7 @@ HERO IMAGE
 
 # Introduction
 
-I did not really appreciate how much structural decision-making goes into a textbook until I tried to draft two of them at once. A methods volume ('Statistical Computing in the Age of AI') and a workflow companion ('Biostatistics Practicum') were both overdue, and I wanted them to share enough scaffolding that a student could move between them without reorienting.
+A textbook demands more structural decision-making than it appears to, and drafting two of them at once makes every one of those decisions explicit. A methods volume ('Statistical Computing in the Age of AI') and a workflow companion ('Biostatistics Practicum') were both overdue, and I wanted them to share enough scaffolding that a student could move between them without reorienting.
 
 The turning point came when I stopped treating 'in the Age of AI' as a subtitle and started treating it as a structural obligation. Three short prose sections of 'Prompts to try' at the end of each chapter was decoration. What the subtitle required was an explicit front-loaded treatment of what the human statistician contributes, paired with an end-of-chapter verification workflow that exercises those contributions.
 
